@@ -1,0 +1,23 @@
+body {
+    font-size: 40px;
+    background: white;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.block {
+    margin: 5vw;
+    width: 50vw;
+    box-shadow: 0 0.5vw 3vw #808080;
+    border-radius: 2vw;
+    background: #ffffff;
+
+}
+
+.block {
+    background: palevioletred;
+}
