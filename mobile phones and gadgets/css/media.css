@@ -48,6 +48,13 @@
 
 @media (max-width: 800px) {
 
+    .header__hiden {
+        display: none;
+    }
+    .header__icons {
+        display: none;
+    }
+    
     
     .nav {
         position: fixed;
