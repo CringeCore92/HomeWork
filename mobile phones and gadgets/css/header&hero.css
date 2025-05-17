@@ -38,10 +38,12 @@
 /* =====burger===== */
 
 .burger-icon {
-    display: none;
+   display: none;
     width: 50px;
     height: 50px;
-    z-index: 12;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
 
 }
 
@@ -73,6 +75,19 @@
 
 .burger-icon span::after {
     bottom: -8px;
+}
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
 }
 
 /* ==========slider================= */
