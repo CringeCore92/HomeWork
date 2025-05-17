@@ -1,0 +1,206 @@
+.header__logo {
+    max-width: 174px;
+    z-index: 11;
+}
+
+
+.header__icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
+.header__top {
+    padding-top: 19px;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    gap: 4vh 40px;
+}
+
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* =====burger===== */
+
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+.body--opened-menu .burger-icon span {
+    background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+/* ==========slider================= */
+
+
+
+.mySwiper {
+    width: 95vw;
+    max-width: 1100px;
+    margin: 40px auto;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #dde5e3;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.05);
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    padding: 50px 40px 40px 60px;
+}
+
+.slide-text {
+    flex: 1;
+    max-width: 480px;
+}
+
+.slide-text h1 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.slide-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 30px;
+    max-width: 380px;
+}
+
+.explore-btn {
+    padding: 10px 32px;
+    border-radius: 25px;
+    border: 1.5px solid #222;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 32px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.explore-btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+.slide-underline {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.slide-underline span {
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #222;
+    border-radius: 2px;
+    opacity: 0.15;
+}
+
+.slide-underline span:first-child {
+    opacity: 0.35;
+}
+
+.slide-image {
+    flex: 1;
+    text-align: right;
+}
+
+.slide-image img {
+    max-height: 340px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #222;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 18px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
